@@ -18,8 +18,11 @@ body {
 }
 
 body {
+  display: grid;
+  place-items: center;
   font-family: 'Roboto', sans-serif;
-  font-size: 12px;
+  font-size: 20px;
+  background-color: #262626;
 }
 
 a {
@@ -44,6 +47,9 @@ button {
   font-family: inherit;
   padding: 0;
 }
+
+//blocks
+@import "blocks/form.scss";
 
 //media
 @import "media.scss";
