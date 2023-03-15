@@ -1,4 +1,7 @@
 .form-search {
+  display: flex;
+  gap: 10px;
+
   input {
     padding: 10px;
     padding-left: 20px;
@@ -11,7 +14,6 @@
   .btn-search {
     padding: 11px;
     width: 120px;
-    color: #ffffff;
     text-transform: uppercase;
     background-color: #11b4dd;
     border-radius: 30px;
