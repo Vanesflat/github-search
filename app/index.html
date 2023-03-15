@@ -15,16 +15,14 @@
 <body>
   <div class="wrapper">
     <form class="form-search" action="/">
-      <input type="text" placeholder="Enter repositories name">
+      <input type="text" placeholder="Enter query" required>
       <button class="btn-search" type="submit">Search</button>
     </form>
 
-    <div class="content">
-      <ul class="repositories-list"></ul>
-    </div>
+    <div class="repositories"></div>
   </div>
 
-  <script src="js/main.min.js"></script>
+  <script src="js/main.min.js" type="module"></script>
 </body>
 
 </html>
