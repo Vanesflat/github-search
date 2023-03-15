@@ -1,0 +1,41 @@
+.repositories {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+}
+
+.repository {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  background-color: #151515;
+  border-radius: 30px;
+  box-shadow: 0 0 15px -5px #000000;
+
+  span {
+    display: block;
+    align-self: flex-start;
+    font-size: 12px;
+    color: #cccccc;
+  }
+
+  img {
+    width: 150px;
+  }
+
+  p {
+    color: #11b4dd;
+  }
+
+  a {
+    transition: all .3s ease;
+
+    &:hover {
+      color: #cccccc;
+      text-decoration: underline;
+    }
+  }
+}
