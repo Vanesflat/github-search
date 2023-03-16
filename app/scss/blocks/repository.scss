@@ -1,4 +1,5 @@
 .repositories {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 15px;
@@ -9,6 +10,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  max-width: 200px;
   gap: 10px;
   padding: 20px;
   text-align: center;
@@ -32,7 +34,9 @@
   }
 
   a {
+    max-width: 150px;
     transition: all .3s ease;
+    overflow: hidden;
 
     &:hover {
       color: #cccccc;
