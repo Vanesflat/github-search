@@ -5,6 +5,7 @@ const PER_PAGE = 10;
 const form = document.querySelector('.form-search');
 const input = document.querySelector('input');
 const repositoriesContainer = document.querySelector('.repositories');
+const emptyMessage = '<span class="empty-message">Nothing found</span>';
 
 form.addEventListener('submit', async (evt) => {
   evt.preventDefault();
@@ -17,13 +18,13 @@ form.addEventListener('submit', async (evt) => {
     repositoriesContainer.innerHTML = '';
 
     if (!data.items.length) {
-      throw new Error('Ничего не найдено');
+      throw new Error;
     }
 
     const repositoriesCards = data.items.map((item) => createRepoCard(item)).join('');
     repositoriesContainer.innerHTML = repositoriesCards;
 
-  } catch (err) {
-    alert(`Ошибка! ${err}`);
+  } catch {
+    repositoriesContainer.innerHTML = emptyMessage;
   }
 });
