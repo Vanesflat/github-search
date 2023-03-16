@@ -57,6 +57,16 @@ button {
   padding: 0 10px;
 }
 
+.title {
+  font-size: 40px;
+  font-weight: 400;
+
+  span {
+    font-weight: 700;
+    color: #11b4dd;
+  }
+}
+
 //blocks
 @import "blocks/form.scss";
 @import "blocks/repository.scss";
